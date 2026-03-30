@@ -39,6 +39,7 @@ header{
   background:var(--accent);color:white;padding:10px 18px;
   border-radius:8px;text-decoration:none;font-weight:600;
   transition:0.3s;
+  display:inline-block;
 }
 .btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.15);}
 
@@ -53,7 +54,12 @@ header{
 .hero h1{font-size:44px;margin-bottom:20px;}
 .hero p{font-size:18px;margin-bottom:30px;}
 
-.hero-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;}
+.hero-buttons{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+}
 
 /* TRUST BAR */
 .trust{
@@ -79,10 +85,7 @@ header{
   transition:0.3s;
 }
 
-.service:hover{
-  transform:translateY(-6px);
-}
-
+.service:hover{transform:translateY(-6px);}
 .service h3{margin-bottom:10px;color:var(--primary);}
 
 /* WHY */
@@ -101,23 +104,28 @@ header{
   box-shadow:0 10px 25px rgba(0,0,0,0.05);
 }
 
-/* CTA STRIP */
+/* CTA STRIP (FIXED SPACING) */
 .cta-strip{
   background:var(--primary);
   color:white;
   text-align:center;
-  padding:60px 20px;
+  padding:80px 20px;
 }
 
-.cta-strip h2{margin-bottom:15px;}
+.cta-strip h2{
+  margin-bottom:20px;
+}
+
+.cta-strip p{
+  margin-bottom:30px;
+  font-size:18px;
+}
 
 /* FAQ */
 .faq h3{margin-top:20px;}
 
 /* CONTACT */
-.contact{
-  text-align:center;
-}
+.contact{text-align:center;}
 
 input,textarea{
   width:100%;padding:12px;margin:10px 0;
@@ -132,7 +140,7 @@ button{
   cursor:pointer;
 }
 
-/* FLOAT BAR MOBILE */
+/* MOBILE BAR */
 .mobile-bar{
   position:fixed;
   bottom:0;left:0;right:0;
@@ -173,6 +181,7 @@ footer{
 @media(max-width:768px){
 .hero h1{font-size:30px;}
 .trust{flex-direction:column;gap:10px;}
+.cta-strip{padding:70px 20px;}
 }
 </style>
 </head>
@@ -182,8 +191,8 @@ footer{
 <header>
   <div class="logo">Pro Plumbing & Drain</div>
   <div class="nav-right">
-    <div class="phone">(775) 000-1800</div>
-    <a href="tel:17750001800" class="btn">Call Now</a>
+    <div class="phone">(775) 882-7400</div>
+    <a href="tel:17758827400" class="btn">Call Now</a>
   </div>
 </header>
 
@@ -191,7 +200,7 @@ footer{
   <h1>24/7 Plumbing in Tahoe, Reno & Carson City — Fast, Reliable Service</h1>
   <p>Leaks, clogs, or emergencies — we show up fast and fix it right the first time.</p>
   <div class="hero-buttons">
-    <a href="tel:17750001800" class="btn">Call Now</a>
+    <a href="tel:17758827400" class="btn">Call Now</a>
     <a href="#contact" class="btn">Get Free Quote</a>
   </div>
 </section>
@@ -236,7 +245,7 @@ footer{
 <section class="cta-strip">
 <h2>Need a Plumber Right Now?</h2>
 <p>Call now for fast service anywhere in Tahoe, Reno, or Carson City.</p>
-<a href="tel:17750001800" class="btn">Call Now</a>
+<a href="tel:17758827400" class="btn">Call Now</a>
 </section>
 
 <section class="fade faq">
@@ -266,12 +275,12 @@ footer{
 </form>
 
 <p style="margin-top:20px;font-size:20px;">
-📞 <a href="tel:17750001800">(775) 000-1800</a>
+📞 <a href="tel:17758827400">(775) 882-7400</a>
 </p>
 </section>
 
 <div class="mobile-bar">
-  <a href="tel:17750001800">Call Now</a>
+  <a href="tel:17758827400">Call Now</a>
   <a href="#contact">Get Quote</a>
 </div>
 
