@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Plumbing & Drain | Tahoe, Carson City & Reno Plumbing Experts</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary:#0B3C5D;
+  --accent:#00AEEF;
+  --dark:#0f172a;
+  --light:#f8fafc;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+
+body{color:var(--dark);line-height:1.6;background:white;}
+
+section{padding:80px 6%;}
+
+/* HEADER */
+header{
+  position:sticky;top:0;background:white;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:15px 6%;z-index:1000;
+  box-shadow:0 4px 20px rgba(0,0,0,0.06);
+}
+
+.logo{font-weight:700;font-size:20px;color:var(--primary);}
+
+.nav-right{display:flex;align-items:center;gap:12px;}
+
+.phone{font-weight:600;}
+
+.btn{
+  background:var(--accent);color:white;padding:10px 18px;
+  border-radius:8px;text-decoration:none;font-weight:600;
+  transition:0.3s;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.15);}
+
+/* HERO */
+.hero{
+  padding:120px 6%;
+  background:linear-gradient(rgba(11,60,93,0.85),rgba(11,60,93,0.85)),
+  url('https://images.unsplash.com/photo-1607472586893-edb57bdc0e39');
+  background-size:cover;color:white;text-align:center;
+}
+
+.hero h1{font-size:44px;margin-bottom:20px;}
+.hero p{font-size:18px;margin-bottom:30px;}
+
+.hero-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;}
+
+/* TRUST BAR */
+.trust{
+  display:flex;justify-content:center;gap:40px;
+  background:white;padding:25px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+  margin-top:-40px;
+  border-radius:12px;
+}
+
+/* SERVICES */
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.service{
+  padding:30px;
+  border-radius:12px;
+  background:white;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+
+.service:hover{
+  transform:translateY(-6px);
+}
+
+.service h3{margin-bottom:10px;color:var(--primary);}
+
+/* WHY */
+.why{background:var(--light);}
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+/* REVIEWS */
+.review{
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* CTA STRIP */
+.cta-strip{
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:60px 20px;
+}
+
+.cta-strip h2{margin-bottom:15px;}
+
+/* FAQ */
+.faq h3{margin-top:20px;}
+
+/* CONTACT */
+.contact{
+  text-align:center;
+}
+
+input,textarea{
+  width:100%;padding:12px;margin:10px 0;
+  border-radius:6px;border:1px solid #ddd;
+}
+
+button{
+  background:var(--accent);
+  color:white;
+  padding:12px 20px;
+  border:none;border-radius:6px;
+  cursor:pointer;
+}
+
+/* FLOAT BAR MOBILE */
+.mobile-bar{
+  position:fixed;
+  bottom:0;left:0;right:0;
+  background:white;
+  display:flex;
+  justify-content:space-around;
+  padding:10px;
+  box-shadow:0 -5px 20px rgba(0,0,0,0.1);
+}
+
+.mobile-bar a{
+  text-decoration:none;
+  background:var(--accent);
+  color:white;
+  padding:12px;
+  border-radius:8px;
+  font-weight:600;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  background:#0f172a;
+  color:white;
+}
+
+/* ANIMATION */
+.fade{
+  opacity:0;
+  transform:translateY(30px);
+  transition:all 0.8s ease;
+}
+.fade.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+@media(max-width:768px){
+.hero h1{font-size:30px;}
+.trust{flex-direction:column;gap:10px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Pro Plumbing & Drain</div>
+  <div class="nav-right">
+    <div class="phone">(775) 000-1800</div>
+    <a href="tel:17750001800" class="btn">Call Now</a>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>24/7 Plumbing in Tahoe, Reno & Carson City — Fast, Reliable Service</h1>
+  <p>Leaks, clogs, or emergencies — we show up fast and fix it right the first time.</p>
+  <div class="hero-buttons">
+    <a href="tel:17750001800" class="btn">Call Now</a>
+    <a href="#contact" class="btn">Get Free Quote</a>
+  </div>
+</section>
+
+<div class="trust fade">
+  <div>⭐ 5.0 Rated</div>
+  <div>⚡ Fast Response</div>
+  <div>🏠 Local & Trusted</div>
+</div>
+
+<section class="fade">
+<h2>Full-Service Plumbing Solutions</h2>
+<div class="services-grid">
+  <div class="service"><h3>Leak Detection & Repair</h3><p>Fast diagnosis and permanent fixes.</p></div>
+  <div class="service"><h3>Drain & Sewer Cleaning</h3><p>Clear tough clogs and restore flow.</p></div>
+  <div class="service"><h3>Water Heater Services</h3><p>Install, repair, and replace systems.</p></div>
+  <div class="service"><h3>Toilets & Fixtures</h3><p>Repairs and new installations.</p></div>
+  <div class="service"><h3>Garbage Disposals</h3><p>Fix or install quickly and cleanly.</p></div>
+  <div class="service"><h3>Emergency Plumbing</h3><p>Available 24/7 when you need us most.</p></div>
+</div>
+</section>
+
+<section class="why fade">
+<h2>Why Homeowners Choose Us</h2>
+<div class="why-grid">
+  <div class="service"><h3>Fast Turnaround</h3><p>We don’t leave you waiting.</p></div>
+  <div class="service"><h3>Locally Owned</h3><p>Serving Tahoe & surrounding areas.</p></div>
+  <div class="service"><h3>Honest Pricing</h3><p>No surprises, no upsells.</p></div>
+  <div class="service"><h3>Modern Service</h3><p>Clear communication and reliability.</p></div>
+</div>
+</section>
+
+<section class="fade">
+<h2>Real Customer Experiences</h2>
+<div class="services-grid">
+  <div class="review">“Showed up same day and fixed everything quickly. Super easy to work with.”</div>
+  <div class="review">“Best plumber I’ve found in Carson City. Honest and reliable.”</div>
+  <div class="review">“Handled an emergency late at night — highly recommend.”</div>
+</div>
+</section>
+
+<section class="cta-strip">
+<h2>Need a Plumber Right Now?</h2>
+<p>Call now for fast service anywhere in Tahoe, Reno, or Carson City.</p>
+<a href="tel:17750001800" class="btn">Call Now</a>
+</section>
+
+<section class="fade faq">
+<h2>Common Questions</h2>
+<h3>Do you offer 24/7 service?</h3>
+<p>Yes, we handle emergencies day and night.</p>
+
+<h3>How fast can you arrive?</h3>
+<p>We aim for same-day service whenever possible.</p>
+
+<h3>What areas do you serve?</h3>
+<p>South Lake Tahoe, Reno, Carson City, and surrounding areas.</p>
+
+<h3>Do you work on commercial jobs?</h3>
+<p>Yes — residential and commercial services available.</p>
+</section>
+
+<section class="contact fade" id="contact">
+<h2>Request Service</h2>
+<p>Call now or send a request below</p>
+
+<form>
+<input type="text" placeholder="Name" required>
+<input type="tel" placeholder="Phone" required>
+<textarea placeholder="What do you need help with?" required></textarea>
+<button type="submit">Request Service</button>
+</form>
+
+<p style="margin-top:20px;font-size:20px;">
+📞 <a href="tel:17750001800">(775) 000-1800</a>
+</p>
+</section>
+
+<div class="mobile-bar">
+  <a href="tel:17750001800">Call Now</a>
+  <a href="#contact">Get Quote</a>
+</div>
+
+<footer>
+© 2026 Pro Plumbing & Drain | Serving Tahoe, Reno & Carson City
+</footer>
+
+<script>
+const faders=document.querySelectorAll('.fade');
+const appear=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){entry.target.classList.add('show');}
+});
+});
+faders.forEach(el=>appear.observe(el));
+</script>
+
+</body>
+</html>
